@@ -1,0 +1,3 @@
+C:/Users/Vaio/Desktop/mania/aids/korki oliwka i taranek/cmake-build-debug/CMakeFiles/korki_oliwka_i_taranek.dir
+C:/Users/Vaio/Desktop/mania/aids/korki oliwka i taranek/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Vaio/Desktop/mania/aids/korki oliwka i taranek/cmake-build-debug/CMakeFiles/rebuild_cache.dir
