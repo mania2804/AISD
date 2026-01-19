@@ -1,0 +1,21 @@
+tworzenie drzewa binarnego 
+wieksze na prawo mniejsze na lewo
+
+
+struct Node{
+  int liczba;
+  vector <Node*> dzieci;  //wskaźnik na dziecko 
+};
+
+
+
+co potrzebuje:
+-zadanie szpital
+- zadanie lista
+- bfs
+-dfs
+- budowanie drzewa
+- onp???
+- kolejka 
+- stos
+- otwieranie pgm
