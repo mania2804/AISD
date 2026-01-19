@@ -17,9 +17,33 @@ void wypisz_w_glab(Wezel *w) {
     printf("%d ", w->liczba);
 
     for (int i=0; i<w->dzieci.size(); i++) {
+
         wypisz_w_glab(w->dzieci[i]);
     }
 }
+
+int maksym=0;
+void znajdz_liscia_najnizej(Wezel* w, int licznik) {
+    if (!w) {
+        return;
+    }
+    licznik++;
+    if (licznik>maksym) {
+        maksym=licznik;
+    }
+
+    for (int i=0; i<w->dzieci.size(); i++) {
+        znajdz_liscia_najnizej(w->dzieci[i], licznik);
+    }
+
+}
+
+void znajdz_sciezke_do_najglebszego() {
+
+}
+
+
+
 queue<Wezel*> wezly_do_powrotu;
 
 void wypisz_w_szerz(Wezel *w) {
@@ -126,6 +150,7 @@ int main() {
     wypisz_w_glab(root);
     wypisz_w_szerz(root);
     wypisz_w_szerz_iteracujnie(root);
+    znajdz_liscia_najnizej(root, 0);
 
     return 0;
 }
